@@ -1,0 +1,31 @@
+.hr-3{
+    margin: 30px;
+}
+.items-center{
+    align-items: center;
+}
+.my-3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.text-center{
+    text-align: center;
+}
+.icons{
+    font-size: 30px;
+    color: #f7f4f4;
+    margin: 105px -192px;
+}
+.twitter, .linkedin, .facebook, .youtube, .instagram{
+    padding: 0 12px;
+}
+.justify-center{
+    justify-content: center;
+
+}
+.rabi{
+    margin: 0 222px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(228, 228, 240);
+            color: rgb(15, 15, 15);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(36, 36, 97);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(180, 180, 243);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            margin: 30px 84px;
+            border: 0;
+            background-color: #4c4c70;
+            height: 1px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+        
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+
+            font-size: 2.3rem;
+
+
+        }
+
+        .leftSection .btn {
+            font-size: 20px;
+            padding: 12px;
+            background-color: #097e0b;
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(184, 52, 224);
+        }
+
+        #element {
+            color: rgb(10, 111, 170);
+        }
+
+        .secondSection {
+            display: flex;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .play {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        footer {
+            background-color: rgb(36, 36, 97);
+            height: 250px;
+        }
+
+        .footer {
+            padding: 23px 122px;
+        }
+
+        
+
+        .secondLeft img {
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+        }
+        .secondRight img{
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+
+        }
+
+        .secondLeft div p h3 {
+            width: 50%;
+            margin: 5px 5px;
+        }
+         h5{
+            width: 50%;
+            margin: -50px 5px; 
+            
+        }
+        
+        a:link, a:visited{
+            text-decoration: none;
+            color: white;
+            display: block;
+            text-align: center;
+           
+        }
+        a:hover, a:active{
+            color: rgb(42, 42, 126);
+           
+        }
+        .secondLeft{
+           width: 50%;
+           margin-top: 100px;
+           margin-left: -60px;
+        }
+        .secondRight{
+           width: 50%;
+           margin-top: 100px;
+                
+        }
+        .thirdSection{
+            display: flex;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+        .thirdSection .skill{
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+
+        }
+        .html{
+            margin: 5px 40px;
+        }
+        .css{
+            margin: 5px 40px;
+        }
+        .javascript{
+            margin: 5px 40px;
+        }
+        .java{
+            margin:5px 40px;
+        }
+        .C{
+            margin: 5px 40px;
+        }
+        .xml, .python{
+            margin: 5px 40px;
+        }
+        .forthSection{
+            display: flex;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+        .forthLeft{
+            width: 150%;
+           margin-top: 100px;
+           margin-left: -300px;
+
+        }
+        .forthLeft img{
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+
+        }
+        .forthRight{
+            width: 150%;
+            margin: 100px 0;
+        }
+        .forthRight img{
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+
+        }
+        .fifthLeft {
+            width: 150%;
+            margin: 100px 0;
+            
+        }
+        .fifth{
+            width: 150%;
+            margin: 115px 0;
+        }
+
+        .fifthLeft img,.fifth img {
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+
+        }
+        .sixth{
+            width: 150%;
+            margin: 70px 0;
+        }
+        .sixth img{
+            width: 12%;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            margin: 38px 22px;
+
+        }
+        h1{
+            color: rgb(70, 89, 126);
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <header>
+        <nav>
+            <div class="left" style="color: white;">Portfolio</div>
+            <div class="rtght">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/C:\Users\PC\Desktop\Portfolio (Task2)\contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Rabia</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href='mailto:rabiahaq020@gmail.com'>Contact Me</a></button>
+                    <button class="btn"><a href="Rabia_Resume 2.pdf" download>See my Resume </a></button>
+                    
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="oip.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Projects</h1>
+            <div class="secondLeft">
+            
+                <h3>Android Application</h3>
+                <img src="android.png.jpg" alt="">
+              <div><p><h5>online car booking android application with the Modern features of Ride hailing and Ride sharing
+                    making the app Eco friendly and Economical.</h5></div>
+                </p>
+                </div>
+            <div class="secondRight">
+                <h3>Iphone Price Prediction</h3>
+                <img src="pre.png" alt="">
+              <div><p><h5>Iphone Price prediction using AI</h5></div>
+                </p>
+
+
+
+            </div>
+           
+        </section>
+        <hr>
+        <Section class="thirdSection">
+            <h1>Skills</h1>
+            <div class="skill">
+                <div class="html">
+                    <h4>html</h4>
+                </div>
+                <div class="css">
+                    <h4>css</h4>
+                </div>
+                <div class="javascript">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="java">
+                    <h4>Java</h4>
+                </div>
+                <div class="C">
+                    <h4>C++</h4>
+                </div>
+                <div class="xml">
+                    <h4>xml</h4>
+                </div>
+                <div class="python">
+                    <h4>Python</h4>
+                </div>
+
+            </div>
+            
+        </Section>
+        <hr class="hr-3">
+        <Section class="forthSection">
+          <h1 style="width: 80%;">Achievements&nbsp;and&nbsp;Certifications <br></h1>
+            <div class="forthLeft" >
+                <h3>Angular.js</h3>
+                <img src="angular.png" alt="">
+                <div><p><h5>Coursera Project Certificate in Angular.js</h5></p></div><br>
+                <div class="fifth">
+                    <h3>Workshop Certificate</h3>
+                <img src="cyber.jpg" alt="">
+                <div><p><h5>Hands-On Training on Cyber Security</h5></p></div>
+
+                </div>
+                
+               
+            </div>
+            <div class="forthRight">
+                <h3>Node.js</h3>
+                <img src="ibm.png" alt="">
+                <div><p><h5>IBM Certificate in Developing Backend apps with Node.js and Express</h5></p></div><br>
+                <div class="sixth">
+                    <h3>Workshop Certificate</h3>
+                <img src="data.jpg" alt="">
+                <div><p><h5>Visualization of Data Mining/Machine Learning by using Python in Pycharm</h5></p></div>
+
+                </div>
+            </div>
+            <div class="fifthLeft">
+                <h3>Workshop Certificate</h3>
+                <img src="obj.png.jpg" alt="">
+                <div><p><h5>Hands-On Training Workshop of Object Dectection and Classification Using Deep Learning Model</h5></p></div><br>
+                
+        </Section>
+       
+
+
+    </main>
+    <footer>
+        <div class="footer text-center my-3 items-center">
+                <div><h2 class="items-center text-center rabi ">Rabia's Portfolio &copy</h2></div>
+                <div class="icons justify-center">
+                   
+                        <ion-icon  class="linkedin" name="logo-linkedin"> </ion-icon>
+                        <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+                        <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+                        <ion-icon class="youtube" name="logo-youtube"></ion-icon>
+                        <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+    
+                    
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Android Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
